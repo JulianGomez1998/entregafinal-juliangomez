@@ -1,5 +1,5 @@
 @import "./utilities/variable";
-
+@import "./utilities/mixins";
 @import "./base/reset";
 @import "./layout/header";
 @import "./layout/footer";
@@ -108,7 +108,6 @@
 
 .main-contact{
     background-color: white;
-    height: 100vh;
 }
 
 .form-contact{
@@ -141,16 +140,8 @@
 }
 
 .mensaje{
-    width: 100%;
-    background-color: black;
-    padding: .625rem;
+    @extend .controls;
     padding-bottom: 6.25rem;
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    border: .0625rem solid gray;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.125rem;
-    color: white;
 }
 
 .button{
@@ -169,30 +160,29 @@
 .carro{
     width: 50rem;
     height: 25rem;
-    background-color: black;
+    background-color: white;
     padding: 1.875rem;
+    border: .1875rem solid black;
     margin: auto;
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
     border-radius: .5rem;
     font-family: 'Maven Pro', sans-serif;
-    color: white;
-    div{
-        display: flex;
-        width: 100%;
-        height: 18.75rem;
-        padding: 7.5rem;
-        background-color: white;
-        border-radius: .5rem;
-        margin: 0rem;
-        color: black;
-        p{
-            text-align: center;
-        margin-left: 6.25rem;
-        font-size: 1.25rem;
-        padding: .3125rem;
-        border-radius: .5rem;
-        text-align: justify;
-        }
+    color: black;
+    p{
+        margin: auto;
+        margin-top: 9.375rem;
+        text-align: center;
+        width: 25rem;
+        border: .125rem solid gray;
+        border-radius: .625rem;
     }
 }
+
+
+@import "./layout/media1440";
+@import "./layout/media1024";
+@import "./layout/media768";
+@import "./layout/media425";
+@import "./layout/media375";
+@import "./layout/media320";
