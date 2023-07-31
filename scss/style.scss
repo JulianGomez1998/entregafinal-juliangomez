@@ -89,6 +89,9 @@
     }   
 }
 
+.cards:hover{
+    transform: scale(1.2);
+}
 /*POLITICAS.HTML*/
 
 .politicas{
@@ -162,7 +165,7 @@
     height: 25rem;
     background-color: white;
     padding: 1.875rem;
-    border: .1875rem solid black;
+    border: .125rem solid black;
     margin: auto;
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;

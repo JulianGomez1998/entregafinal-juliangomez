@@ -1,6 +1,7 @@
 header {
     @include header;
     background-color: $background-header;
+    background: linear-gradient(black 20%, white);
     h1 {
         color: white;
         font-family: 'Major Mono Display', monospace;
@@ -28,6 +29,10 @@ header {
                     text-decoration: none;
                     color: white;
                     font-family: 'Maven Pro', sans-serif;
+                    &:hover{
+                        color: black;
+                        text-shadow: .1875rem .1875rem .3125rem white;
+                    }
                 }
             }   
 }
